@@ -78,13 +78,13 @@ Web Insight AI
 Clone the repository
 
 ```bash
-git clone https://github.com/tamusyosus/web-rag-chat.git
+git clone https://github.com/tamusyosus/web-insight-ai.git
 ```
 
 Navigate to the project directory
 
 ```bash
-cd web-rag-chat
+cd web-insight-ai
 ```
 
 Install the required packages
