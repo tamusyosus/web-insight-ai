@@ -1,0 +1,136 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+html, body, [class*="css"] {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.stApp {
+    background-color: #0E1117;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+section[data-testid="stSidebar"]{
+    background-color:#1B263B;
+    border-right:1px solid #2d3748;
+}
+
+section[data-testid="stSidebar"] *{
+    color:white !important;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.main-title{
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    color:white;
+    margin-bottom:5px;
+}
+
+.sub-title{
+    text-align:center;
+    color:#94A3B8;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+
+
+/* ===========================
+   SOURCE BOX
+=========================== */
+
+.source-box{
+
+    background:#1F2937;
+
+    border-left:4px solid #2563EB;
+
+    border-radius:12px;
+
+    padding:16px;
+
+    margin:12px 0;
+
+    line-height:1.6;
+
+    color:white;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.stButton button{
+
+    width:100%;
+
+    height:52px;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.stButton button:hover{
+
+    background:#1D4ED8;
+
+    color:white;
+}
+
+/* ===========================
+   TEXT AREA
+=========================== */
+
+textarea{
+
+    background:#111827 !important;
+
+    color:white !important;
+
+    border-radius:15px !important;
+
+}
+
+/* ===========================
+   CHAT INPUT
+=========================== */
+
+[data-testid="stChatInput"]{
+
+    border-radius:15px;
+
+}
+
+/* ===========================
+   METRIC
+=========================== */
+
+[data-testid="metric-container"]{
+
+    background:#1F2937;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    border:1px solid #334155;
+
+}

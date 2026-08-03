@@ -1,0 +1,9 @@
+.cache/
+.vscode/
+__pycache__/
+app.py
+chunk.py
+index.py
+ragchat.py
+requirements.txt
+scraper.py
