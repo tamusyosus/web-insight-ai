@@ -1,28 +1,29 @@
 # Web Insight AI
+Web Insight AI is a Retrieval-Augmented Generation (RAG) application that enables users to ask questions about the content of one or more websites. Instead of manually searching through lengthy webpages, users can provide website URLs and receive context-aware answers generated from the retrieved webpage content.
 
-Web Insight AI is a Retrieval-Augmented Generation (RAG) application that enables users to interact with website content using natural language. Users can provide one or more website URLs, and the application extracts the webpage content, processes it, and answers questions based on the retrieved information.
-
-The project combines web scraping, semantic search, vector embeddings, and a Large Language Model (LLM) to provide accurate and context-aware responses. It demonstrates the practical implementation of a complete RAG pipeline using Python.
+The application combines web scraping, semantic search, vector embeddings, and a Large Language Model (LLM) to build an end-to-end RAG pipeline.
 
 ---
 
 ## Project Overview
 
-Reading lengthy webpages to find specific information can be time-consuming. Web Insight AI simplifies this process by allowing users to ask questions directly about website content.
+The application works by extracting text from one or more webpages, cleaning the content, splitting it into overlapping text chunks, generating vector embeddings using Sentence Transformers, and storing those embeddings in a FAISS vector database.
 
-The application extracts text from webpages, divides it into smaller chunks, converts each chunk into vector embeddings using Sentence Transformers, stores them in a FAISS vector index, and retrieves the most relevant information when a question is asked. The retrieved context is then provided to the language model to generate an accurate response.
-
+When a user asks a question, the application retrieves the most relevant text chunks through semantic search and provides them to the language model, which generates an answer based only on the retrieved context.
 ---
 
 ## Features
 
-- Extracts content from one or multiple websites
-- Processes webpage text into manageable chunks
-- Generates vector embeddings using Sentence Transformers
-- Stores embeddings using FAISS for efficient similarity search
-- Retrieves the most relevant webpage content through semantic search
-- Generates context-aware answers using Retrieval-Augmented Generation (RAG)
-- Simple and interactive user interface built with Streamlit
+- Process one or multiple website URLs
+- Automatic webpage text extraction
+- HTML cleaning and preprocessing
+- Overlapping text chunking
+- Semantic search using Sentence Transformers
+- Fast vector similarity search using FAISS
+- Context-aware question answering with Retrieval-Augmented Generation (RAG)
+- Adjustable response styles (Brief, Balanced and Detailed)
+- Interactive Streamlit interface
+- Displays the source webpages used to generate each answer
 
 ---
 
@@ -31,27 +32,42 @@ The application extracts text from webpages, divides it into smaller chunks, con
 **Programming Language**
 - Python
 
-**Libraries and Frameworks**
+### Framework
+
 - Streamlit
+
+**Libraries and Frameworks**
+
 - BeautifulSoup
 - Requests
 - Sentence Transformers
 - FAISS
-- Transformers
+- Hugging Face Transformers
+- PyTorch
 - NumPy
 
 ---
 
+
+### Language Model
+
+- Qwen2.5-1.5B-Instruct
+
+---
+
+
 ## Project Workflow
 
 1. Enter one or more website URLs.
-2. Extract webpage content using web scraping.
-3. Clean and split the extracted text into smaller chunks.
-4. Convert each chunk into vector embeddings using Sentence Transformers.
-5. Store the embeddings in a FAISS vector database.
-6. Enter a question related to the website content.
-7. Retrieve the most relevant chunks using semantic search.
-8. Generate the final answer using the retrieved context.
+2. Extract webpage content using BeautifulSoup.
+3. Remove unnecessary HTML elements and clean the extracted text.
+4. Split the text into overlapping chunks.
+5. Generate vector embeddings using Sentence Transformers.
+6. Store embeddings in a FAISS vector index.
+7. Ask questions about the website content.
+8. Retrieve the most relevant chunks using semantic search.
+9. Generate a context-aware answer using the language model.
+10. Display the retrieved source webpages along with the generated answer.
 
 ---
 
