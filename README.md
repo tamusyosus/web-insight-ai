@@ -141,8 +141,9 @@ Web Insight AI
 ## Application Screenshots
 
 ### Home Page
+
 <p align="center">
-  <img src ="screenshots/home.png" width ="900">
+  <img src="screenshots/home.png" width="900">
 </p>
 
 ---
@@ -150,14 +151,15 @@ Web Insight AI
 ### Analyze Websites Analysis
 
 <p align="center">
-  <img src ="screenshots/Analyze.png" width ="900">
-  
+  <img src="screenshots/Analyze.png" width="900">
+</p>
+
 ---
 
 ### Answer Generation
 
 <p align="center">
-  <img src ="screenshots/Answer_generation.png" width ="900">
+  <img src="screenshots/Answer_generation.png" width="900">
 </p>
 
 ---
