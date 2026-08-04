@@ -93,17 +93,21 @@ Web Insight AI
   <img src ="screenshots/home.png" width ="900">
 </p>
 
+---
+
 ### Analyze Websites Analysis
 
 <p align="center">
   <img src ="screenshots/Analyze.png" width ="900">
-
+  
+---
 
 ### Answer Generation
 
 <p align="center">
   <img src ="screenshots/Answer_generation.png" width ="900">
 </p>
+
 ---
 
 ## Installation
