@@ -141,6 +141,9 @@ st.markdown(
 
 status_placeholder = st.empty()
 
+build_button = False
+urls_input = ""
+
 if st.session_state.pipeline is None:
 
     st.subheader("🌐Add WebSites")
