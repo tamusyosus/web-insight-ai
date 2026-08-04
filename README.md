@@ -89,14 +89,22 @@ Web Insight AI
 ## Application Screenshots
 
 ### Home Page
-
+<p align="center">
+  <img src ="screenshots/home.png" width ="900">
+</p>
 ![Home Page](screenshots/home.png)
 
 ### Analyze Websites Analysis
 
+<p align="center">
+  <img src ="screenshots/Analyze.png" width ="900">
 ![Website Analysis](screenshots/Analyze.png)
 
 ### Answer Generation
+
+<p align="center">
+  <img src ="screenshots/Answer_generation.png" width ="900">
+</p>
 
 ![Answer Generation](screenshots/Answer_generation.png)
 ---
@@ -149,9 +157,9 @@ The application automatically uses GPU acceleration when CUDA is available. On s
 - Support PDF documents
 - Support additional document formats
 - Maintain conversation history
-- Integrate multiple LLMs
-- Improve retrieval using reranking
-- Deploy the application on the cloud
+- Support for multiple embedding models
+- Source citation improvements
+
 
 ---
 
@@ -161,5 +169,5 @@ The application automatically uses GPU acceleration when CUDA is available. On s
 
 **Sushmita Gurung**
 
-
-
+- GitHub: https://github.com/tamusyosus
+- LinkedIn: https://www.linkedin.com/in/sushmitagurung/
