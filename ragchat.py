@@ -117,8 +117,8 @@ def build_pipeline(urls: list[str]) -> dict:
     model = AutoModelForCausalLM.from_pretrained(
         GEN_MODEL,
         cache_dir=MODEL_CACHE,
-        device_map="cuda",
-        dtype=torch.float16
+        device_map="auto",
+        torch_dtype=torch.float32
     )
 
     generator = pipeline(
