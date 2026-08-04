@@ -6,4 +6,4 @@ transformers
 torch
 accelerate
 torchvision
-numpy
+nump
