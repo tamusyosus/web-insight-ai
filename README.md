@@ -86,7 +86,19 @@ Web Insight AI
 ├── scraper.py             # Extracts content from webpages
 └── style.css              # Custom UI styling
 ```
+## Application Screenshots
 
+### Home Page
+
+![Home Page](images/home.png)
+
+### Website Analysis
+
+![Website Analysis](images/analysis.png)
+
+### Chat Interface
+
+![Chat Interface](images/chat.png)
 ---
 
 ## Installation
@@ -114,6 +126,21 @@ Run the application
 ```bash
 streamlit run app.py
 ```
+## Hardware Requirements
+
+This project runs the **Qwen2.5-1.5B-Instruct** language model locally for response generation.
+
+For the best experience, the recommended system configuration is:
+
+- CUDA-compatible NVIDIA GPU (recommended)
+- 16 GB RAM minimum (32 GB recommended)
+- Python 3.11+
+- Internet connection for downloading models during the first run
+
+The application automatically uses GPU acceleration when CUDA is available. On systems without a CUDA-compatible GPU or with limited memory, model loading and response generation may be slower, and memory-related errors may occur.
+
+
+
 
 ---
 
@@ -127,7 +154,6 @@ streamlit run app.py
 - Deploy the application on the cloud
 
 ---
-
 
 
 
