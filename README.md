@@ -12,6 +12,14 @@ The application works by extracting text from one or more webpages, cleaning the
 When a user asks a question, the application retrieves the most relevant text chunks through semantic search and provides them to the language model, which generates an answer based only on the retrieved context.
 ---
 
+## Live Demo
+
+🔗 Streamlit App: https://web-insight-ai-nxnfqgrqnpvykizs6axwzb.streamlit.app/
+
+**Note:** The application is deployed on Streamlit Cloud. Due to the memory limitations of the free hosting environment, processing very large webpages may fail or take longer. The complete implementation and workflow can be explored through the source code available in this repository.
+
+
+
 ## Features
 
 - Process one or multiple website URLs
@@ -47,11 +55,24 @@ When a user asks a question, the application retrieves the most relevant text ch
 - NumPy
 
 ---
+## Skills Demonstrated
 
+- Retrieval-Augmented Generation (RAG)
+- Large Language Models (LLMs)
+- Semantic Search
+- Information Retrieval
+- Vector Embeddings
+- FAISS Vector Indexing
+- Prompt Engineering
+- Web Scraping
+- Text Chunking and Preprocessing
+- Streamlit Application Development
+- Hugging Face Transformers
+- Python
 
 ### Language Model
 
-- Qwen2.5-1.5B-Instruct
+- Qwen2.5-1.5B-Instruct(Local Hugging Face model)
 
 ---
 
@@ -69,6 +90,37 @@ When a user asks a question, the application retrieves the most relevant text ch
 9. Generate a context-aware answer using the language model.
 10. Display the retrieved source webpages along with the generated answer.
 
+## System Architecture
+
+```
+User
+   │
+   ▼
+Enter Website URLs
+   │
+   ▼
+Web Scraping (Requests + BeautifulSoup)
+   │
+   ▼
+Text Cleaning
+   │
+   ▼
+Chunking
+   │
+   ▼
+Sentence Transformer Embeddings
+   │
+   ▼
+FAISS Vector Database
+   │
+   ▼
+Semantic Retrieval
+   │
+   ▼
+Qwen2.5-1.5B-Instruct
+   │
+   ▼
+Answer Generation
 ---
 
 ## Project Structure
@@ -81,7 +133,7 @@ Web Insight AI
 ├── app.py                 # Streamlit application       
 ├── chunk.py               # Splits extracted text into chunks
 ├── index.py               # Creates and manages the FAISS index
-├── ragchat.txt            # RAG pipeline and question answering
+├── ragchat.py             # RAG pipeline and question answering
 ├── requirements.txt       # Project dependencies      
 ├── scraper.py             # Extracts content from webpages
 └── style.css              # Custom UI styling
@@ -148,10 +200,17 @@ For the best experience, the recommended system configuration is:
 
 The application automatically uses GPU acceleration when CUDA is available. On systems without a CUDA-compatible GPU or with limited memory, model loading and response generation may be slower, and memory-related errors may occur.
 
-
-
-
 ---
+
+
+## Deployment
+
+A Streamlit Community Cloud deployment was created for this project. However, the application uses the **Qwen2.5-1.5B-Instruct** language model for local inference, which may exceed the memory limits of the free hosting environment during website analysis.
+
+The application runs successfully in a local environment. For production deployment, it can be hosted on infrastructure with sufficient CPU/GPU memory or integrated with an external inference service.
+
+
+
 
 ## Future Improvements
 
