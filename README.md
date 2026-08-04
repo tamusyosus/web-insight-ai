@@ -90,15 +90,15 @@ Web Insight AI
 
 ### Home Page
 
-![Home Page](images/home.png)
+![Home Page](screenshots/home.png)
 
-### Website Analysis
+### Analyze Websites Analysis
 
-![Website Analysis](images/analysis.png)
+![Website Analysis](screenshots/Analyze.png)
 
-### Chat Interface
+### Answer Generation
 
-![Chat Interface](images/chat.png)
+![Answer Generation](screenshots/Answer_generation.png)
 ---
 
 ## Installation
